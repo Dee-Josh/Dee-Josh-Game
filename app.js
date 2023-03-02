@@ -157,7 +157,8 @@ function closePlay(){
   $(".how-to-play").addClass("hidden");
   $(".overlay").css("display", "none");
 
-  let close = true;
+  close = true;
+  console.log(close);
   
 }
 
@@ -165,14 +166,15 @@ $(".cls-btn").click(closePlay);
 $(".ply-btn").click(closePlay);
 
 
-window.addEventListener('click', ()=>{
-  if(close === true){
-    if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
+document.body.addEventListener('click', ()=>{
+    if(close === true){
+        // alert("jdjdjd");
+        if (!started) {
+            $("#level-title").text("Level " + level);
+            nextSequence();
+            started = true;
+        }
     }
-  }
 })
 
 
