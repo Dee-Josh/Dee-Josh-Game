@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dee-Josh-Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title">Press any Key to Start</h1>
+  <div class="highscore"><h1>HighScore: <span id="highscore">0</span></h1></div>
+  <div class="container">
+    <div lass="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="how-to-play">
+    <div class="how-to-play_top">
+      <h2>How to play</h2>
+      <p><span class="hint-count">1</span> of 5</p>
+    </div>
+    <div class="how-to-play_content">
+      <p class="hint-1">The goal of this game is click the box that the computer selects in the order it was selected.</p>
+      <p class="hint-2 hidden">
+        On level 1, the computer selects a box and you are expected to click that box. Easy Peasy.
+      </p>
+      <p class="hint-3 hidden">
+        On level 2, the computer selects another box, you are expected to click. CLick the first box from level 1 followed by the box selected in level 2.
+      </p>
+      <p class="hint-4 hidden">
+        On level 3, the computer selects another box, you are expected to click the box from level 1 followed by the box selected in level 2 then the box just selected in level 3. <br>
+        And on and on like that..
+      </p>
+      <p class = "hint-5 hidden" >
+        See how far you can go, very few people are able to reach level 15.
+      </p>
+    </div>
+    <div class="how-to-play_bottom">
+      <button class="cls-btn hint-btn">Close</button>
+      <button class="bck-btn hint-btn hidden">Back</button>
+      <button class="nxt-btn hint-btn">Next</button>
+      <button class="ply-btn hint-btn hidden">Play</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+</body>
+
+</html>
